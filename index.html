@@ -1,12 +1,216 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="BarberCut melhorando seu estilo e autoestima">
+  <title>BarberCut</title>
+  <link rel="icon" href="./img/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-  
+
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./">
+        <img class="logo" src="./img/BarberCut.svg " alt="BarberCut">
+      </a>
+      <nav aria-label="primaria">
+        <button id="btn-mobile">Menu</button>
+        <ul class="header-menu font-2-l cor-0">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="introducao-bg">
+    <div class="introducao container">
+      <div class="introducao-conteudo">
+        <h1 class="font-1-xxl cor-0">Comece a semana com <span class="cor-6">estilo</span></h1>
+        <p class="font-2-l cor-3">Sabemos que um cabelo bem cortado e uma barba bem feita elevam a autoestima e confiança de um homem.</p>
+        <a class="botao cor-0" href="#">Entre em Contato</a>
+      </div>
+      <img src="./img/foto/fotointroducao.jpg" alt="BarberCut Introducao">
+    </div>
+  </main>
+
+  <section class="sobre-bg" id="sobre" aria-label="sobre">
+    <div class="sobre container">
+      <img src="./img/foto/foto2.jpg" alt="BarberCut Sobre">
+      <div class="sobre-conteudo">
+        <h2 class="font-1-xl cor-0">Quem <span class="cor-6">somos</span></h2>
+        <p class="font-2-l cor-3">A BarberCut é uma barbearia inspirada no modelo de barbearias Nova Iorquinas e foi criada com o objetivo de oferecer confiança e autoestima aos nossos clientes através de cortes de cabelo bem feitos e barbas bem aparadas. Oferecemos um ambiente climatizado e familiar, com videogame e uma cerveja bem gelada para os homens passarem o seu tempo na barbearia com lazer e tranquilidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicos-bg" id="servicos" aria-label="servicos">
+    <h2 class="font-1-xl cor-0">Nossos <span class="cor-1">serviços</span></h2>
+    <div class="servicos container">
+      <div class="servicos-conteudo">
+        <div class="imagem">
+          <img src="./img/icon-services/icon1.svg" alt="máquina">
+        </div>
+        <p class="font-5-l cor-5">A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
+      </div>
+
+      <div class="servicos-conteudo">
+        <img src="img/icon-services/icon2.svg" alt="tesoura">
+        <p class="font-5-l cor-5">A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
+      </div>
+
+      <div class="servicos-conteudo">
+        <img src="./img/icon-services/icon3.svg" alt="barba">
+        <p class="font-5-l cor-5">A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com a modelagem de barbas diferenciadas.</p>
+      </div>
+
+    </div>
+    <a class="botao2 cor-0" href="#contato">Agendar seu horário</a>
+  </section>
+
+  <section class="galeria-bg" id="galeria" aria-label="galeria">
+    <div class="galeria container2">
+      <h2 class="font-1-xl cor-0">Alguns <span class="cor-6">Trabalhos</span></h2>
+      <div class="galeria-conteudo">
+        <img src="./img/foto/corte1.jpg" alt="corte1">
+        <img src="./img/foto/corte2.jpg" alt="corte2">
+        <img src="./img/foto/corte3.jpg" alt="corte3">
+        <img src="./img/foto/corte4.jpg" alt="corte4">
+        <img src="./img/foto/corte5.jpg" alt="corte5">
+        <img src="./img/foto/corte6.jpg" alt="corte6">
+      </div>
+    </div>
+  </section>
+
+  <section class="precos-bg" id="precos" aria-label="precos">
+    <h2 class="font-1-xl cor-0">Lista de <span class="cor-6">preços</span></h2>
+
+    <div class="precos container3">
+      <div class="precos-conteudo">
+        <img src="./img/foto/fotoprecos.jpg" alt="Lista de Preços">
+
+        <ul class="precos-lista font-2-l cor-5">
+          <li>
+            <p>máquina e tesoura</p>
+            <span class="font-3-l">R$ 45,00</span>
+          </li>
+
+          <li>
+            <p>máquina</p>
+            <span class="font-3-l">R$ 35,00</span>
+          </li>
+
+          <li>
+            <p>tesoura</p>
+            <span class="font-3-l">R$ 25,00</span>
+          </li>
+
+          <li>
+            <p>barba</p>
+            <span>R$ 15,00</span>
+          </li>
+
+          <li>
+            <p>sombrancelha</p>
+            <span>R$ 5,00</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato-bg" id="contato" aria-label="contato">
+    <div class="contato container">
+      <img src="./img/foto/map.jpg" alt="mapa da loja">
+
+      <div class="contato-conteudo">
+        <h2 class="font-1-xl cor-0">Faça seu <span class="cor-6">agendamento</span></h2>
+        <form class="font-5-l" action="./">
+          <div>
+            <label for="nome"></label>
+            <input type="text" id="nome" name="nome" placeholder="NOME" required />
+          </div>
+          <div>
+            <label for="data"></label>
+            <input type="date" id="data" name="data" placeholder="data" required />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="EMAIL" required />
+          </div>
+          <div>
+            <label for="time"></label>
+            <input type="time" id="time" name="horario" placeholder="horario" required />
+          </div>
+          <div>
+            <label for="mensagem"></label>
+            <textarea rows="2" name="mensagem" id="mensagem" placeholder="MENSAGEM"></textarea>
+          </div>
+        </form>
+        <a class="botao cor-0" href="#preco">Enviar</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-bg" aria-label="footer">
+    <div class="footer container">
+      <img class="logo" src="./img/BarberCut.svg" alt="BarberCut">
+      <div class="footer-lista">
+        <h2 class="font-1-xl cor-0">Nossas redes sociais</h2>
+        <ul class="redes">
+          <li>
+            <a href="#">
+              <img src="./img/icon/twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <img src="./img/icon/facebook.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/icon/instagram.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/icon/youtube.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="rodape">
+    <p class="font-5-l cor-0">BarberCut © todos os direitos reservados </p>
+  </div>
+
+  <div>
+    <a href="https://api.whatsapp.com/send?phone=552199999999&text=Olá,%20bem%20vindo%20a%20BarberCut%20ficamos%20felizes%20por%20entrar%20em%20contato%20conosco." target="_blank" class="float">
+      <img src="./wpp/img/whatsapp.svg" alt="whatsapp" width="50">
+    </a>
+    <div id="caixaTexto">
+      <p class=" font-4-l cor-5">Fale conosco via WhatsApp</p>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+
 </body>
+
 </html>

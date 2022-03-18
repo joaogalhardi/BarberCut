@@ -1,0 +1,33 @@
+.galeria-bg{
+  background: var(--cor-2);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.galeria h2{
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.galeria-conteudo{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria-conteudo img{
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (max-width:800px) {
+  .galeria h2{
+    font-size: 2rem;
+  }
+}

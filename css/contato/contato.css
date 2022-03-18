@@ -1,0 +1,132 @@
+.contato-bg{
+  background: var(--cor-1);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--cor-2);
+}
+
+.contato{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.contato img{
+  border-radius: 5px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.contato-conteudo h2{
+  margin-bottom: 64px;
+  text-transform: uppercase;
+}
+
+.contato-conteudo h2::before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 8px;
+  background: var(--cor-6);
+  margin-bottom: 8px;
+}
+
+.contato-conteudo form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  gap: 12px 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-conteudo form div{
+  position: relative;
+}
+
+.contato-conteudo form div::before{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 43px;
+  background: var(--cor-6);
+}
+
+.contato-conteudo form div:nth-child(5)::before{
+  height: 50px;
+} 
+
+
+.contato-conteudo form input{
+  height: calc(39px + 4px);
+}  
+
+
+.contato-conteudo form input,
+.contato-conteudo form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-left: 8px;
+  background: var(--cor-3);
+  box-sizing: border-box;
+  border-style: none;
+  outline: none;
+}  
+
+.contato-conteudo form textarea{
+  margin-bottom: 30px;
+  resize: none;
+}  
+
+.contato-conteudo form textarea::placeholder{
+  font: 400 14px/1.375 "Open Sans",sans-serif;
+}
+
+.botao{
+  grid-column: 1;
+}  
+
+@media (max-width:1050px) {
+  .contato-conteudo h2{
+    line-height: 1.2;
+  }
+}
+
+@media (max-width:1000px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato img{
+    width: 500px;
+    display: grid;
+    place-self: center;
+  }
+
+  .contato-conteudo{
+    display: grid;
+    grid-area: 1/1;
+    justify-self: center;
+  }
+
+  .contato-conteudo form{
+    grid-template-columns: 1fr;
+  }
+
+  .botao{
+    place-self: center;
+  }
+}
+
+
+@media (max-width:520px) {
+  .contato-conteudo h2{
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .contato-conteudo h2::before{
+    display: none;
+  }
+}
