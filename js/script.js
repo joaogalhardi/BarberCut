@@ -45,6 +45,7 @@ ScrollReveal().reveal(
   .contato,
   .footer
 `,
-  { delay: 600, duration: 600,  scale: 2}
+  { delay: 600, duration: 600, scale: 0.85, distance: '10px',
+  opacity: 0,}
 );
 
