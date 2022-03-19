@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="BarberCut melhorando seu estilo e autoestima">
   <title>BarberCut</title>
+
   <link rel="icon" href="./img/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.css" as="style" />
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +25,12 @@
       <a href="./">
         <img class="logo" src="./img/BarberCut.svg " alt="BarberCut">
       </a>
+
       <nav aria-label="primaria">
-        <button id="btn-mobile">Menu</button>
+        <button id="btn-mobile">
+          <span id="hamburguer"></span>
+        </button>
+
         <ul class="header-menu font-2-l cor-0">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
@@ -178,7 +184,7 @@
           </li>
           <li>
             <a href="#">
-                <img src="./img/icon/facebook.svg" />
+              <img src="./img/icon/facebook.svg" />
             </a>
           </li>
           <li>
