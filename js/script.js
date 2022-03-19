@@ -28,3 +28,23 @@ links.forEach((link) => {
 
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
+
+
+// Scroll Animation
+
+ScrollReveal().reveal(
+  `
+  .introducao,
+  .sobre,
+   h2,
+  .texto,
+  .botao2,
+  .servicos,
+  .galeria,
+  .precos,
+  .contato,
+  .footer
+`,
+  { delay: 600, duration: 600,  scale: 2}
+);
+
