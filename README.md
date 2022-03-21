@@ -7,8 +7,8 @@
 <p align="center"><strong>Landing Page builded with the goal of reinforce acknowledge in HTML, CSS and Javascript and create a barber shop site.</strong></p>
 
 <div align="center" >
-  <img src="./img/gif/barbercut-web.gif" alt="" height="425">
-  <img src="./img/gif/barbercut-mobile.gif" alt="" height="425">
+  <img src="./img/gif/barbercut-web.gif" alt="barbercut-web">
+  <img src="./img/gif/barbercut-mobile.gif" alt="barbercut-mobile" height="425">
 </div>
 
 ---
