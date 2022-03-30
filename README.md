@@ -4,7 +4,7 @@
 <br>
 </h1>
 
-<p align="center"><strong>Landing Page builded with the goal of reinforce acknowledge in HTML, CSS and Javascript and create a barber shop site.</strong></p>
+<h2 align="center"><strong>Landing Page builded with the goal of reinforce acknowledge in HTML, CSS and Javascript and create a barber shop site.</strong></h2>
 
 <div align="center" >
   <img src="./img/gif/barbercut-web.gif" alt="barbercut-web">
