@@ -38,6 +38,8 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 
 };
 
+mobileMenu();
+
 
 // Scroll Animation
 
