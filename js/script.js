@@ -1,16 +1,23 @@
 // WhatsApp
 
-// Após 5 segundos passados do usuário na página será exibida a caixa de texto
+function clickInWhatsapp(){
+
 setTimeout(() => {
   document.getElementById("caixaTexto").style.visibility = 'visible'
 }, 5000);
 
-// Quando for dado um clique na caixa de texto a mensagem some
+
 caixaTexto.onclick = () => {
   document.getElementById("caixaTexto").style.visibility = "hidden";
 };
+};
+
+clickInWhatsapp();
 
 //Menu-Mobile
+
+function mobileMenu(){
+
 const btnMobile = document.querySelector("#btn-mobile");
 const nav = document.querySelector("nav");
 const links = document.querySelectorAll(".header-menu a")
@@ -28,6 +35,8 @@ links.forEach((link) => {
 
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
+
+};
 
 
 // Scroll Animation
