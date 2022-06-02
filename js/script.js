@@ -32,20 +32,60 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 
 // Scroll Animation
 
-ScrollReveal().reveal(
-  `
-  .introducao,
-  .sobre,
-   h2,
-  .texto,
-  .botao2,
-  .servicos,
-  .galeria,
-  .precos,
-  .contato,
-  .footer
-`,
-  { delay: 600, duration: 600, distance: '5px',
-  opacity: 0,}
-);
+function animationScroll(){
 
+const sections = document.querySelectorAll('.js-scroll');
+const browser = window.matchMedia('(min-width:1600px)').matches;
+let windowHalf;
+
+  if(!browser){
+   windowHalf = window.innerHeight * 0.6;
+  } else {
+   windowHalf = window.innerHeight * 0.7;
+  };
+
+  function initScroll(){
+    sections.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const isSectionVisible = ( sectionTop - windowHalf) < 0;
+    
+    if(isSectionVisible){
+      section.classList.add('ativo');
+    }else{
+      section.classList.remove('ativo');
+    }
+  });
+};
+
+initScroll();
+
+window.addEventListener('scroll', initScroll);
+};
+
+animationScroll();
+
+// Scroll Suave
+
+function smoothScroll(){
+const linksInternos = document.querySelectorAll('.js-links a')
+
+function activeLink(event){
+  event.preventDefault();
+  const href = event.currentTarget.getAttribute('href');
+  const section = document.querySelector(href);
+  let topo = section.offsetTop;
+  topo -= 30;
+
+  window.scrollTo({
+    top: topo,
+    behavior:'smooth',
+  });   
+};
+
+
+linksInternos.forEach((link) => {
+  link.addEventListener('click', activeLink);
+});
+};
+
+smoothScroll();
