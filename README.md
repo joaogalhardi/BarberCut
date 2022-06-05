@@ -15,7 +15,7 @@
 
 # See the project
 
-- <strong>Click here:</strong> https://joaogalhardi.github.io/BarberCut/
+- <strong>Click here:</strong> https://barber-cut.vercel.app/
 
 
 ---
